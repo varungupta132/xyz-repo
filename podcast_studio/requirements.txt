@@ -1,0 +1,6 @@
+flask
+edge-tts
+openai
+requests
+beautifulsoup4
+PyPDF2
