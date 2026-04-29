@@ -32,7 +32,7 @@ except ImportError:
 # CONFIGURATION
 # ============================================================================
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 openrouter_client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
