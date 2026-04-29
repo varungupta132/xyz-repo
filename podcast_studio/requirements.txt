@@ -4,3 +4,5 @@ openai
 requests
 beautifulsoup4
 PyPDF2
+pydub
+gunicorn

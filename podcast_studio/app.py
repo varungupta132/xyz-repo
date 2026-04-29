@@ -840,11 +840,12 @@ def get_history():
 # ============================================================================
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 8080))
     print("\n" + "="*60)
     print("  INTERACTIVE PODCAST STUDIO")
     print("="*60)
-    print("  Open: http://localhost:8080")
+    print(f"  Open: http://localhost:{port}")
     print("  AI Script : OpenRouter (free models, auto-fallback)")
     print("  Audio     : Microsoft EdgeTTS (free, unlimited)")
     print("="*60 + "\n")
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=False, host='0.0.0.0', port=port)
